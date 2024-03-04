@@ -6,3 +6,11 @@ server:
     read: 15
     write: 10
     idle: 5
+http:
+  base_path: "/api/v1/alert"
+adapter:
+  mongodb:
+    alert:
+      uri: "mongodb://localhost:27017"
+      database: "project_db"
+      collection: "alert"
