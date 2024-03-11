@@ -8,11 +8,7 @@ import (
 )
 
 func main() {
-	cfgPath, err := config.ParseFlags()
-	if err != nil {
-		log.Fatal(err)
-	}
-	cfg, err := config.InitConfig(cfgPath)
+	cfg, err := config.InitConfig()
 	if err != nil {
 		log.Fatal(err)
 	}
